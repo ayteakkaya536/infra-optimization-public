@@ -1,0 +1,10 @@
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=YOUR_PASSWORD
+resources:
+  - ingressawscontroller.yaml 
+  - mysql-deployment.yaml
+  - wordpress-deployment.yaml
+  - user_role.yaml
+  - metricserver-v5.yaml
